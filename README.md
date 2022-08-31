@@ -5,7 +5,7 @@ This IP block simulates a binary synchronous (parallel) MOD-4 counter. Applicati
 
 ## Features: 
 - tri-direction (pause, count up, count down) 
-- loadable (use data[3:1], eg. for jump instruction) 
+- loadable (use data[3:1], eg. for jump instruction, initialization at boot up) 
 - synchronous output(at rising edge) with async (ripple) setup of next count) 
 - easy to control, fast and scalable (each 1 bit counter only depends on previous counter)
 
