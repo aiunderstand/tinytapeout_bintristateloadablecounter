@@ -1,7 +1,7 @@
 ![](../../workflows/wokwi/badge.svg)
 
-# Binary Tristate Loadable Counter MOD 4
-This IP block simulates a binary synchronous (parallel) MOD-4 counter. Applications are CPU's, PWM signal generators, etc. 
+# Binary Tristate Loadable Counter MOD 16
+This IP block simulates a binary synchronous (parallel) MOD-16 counter. Applications are CPU's, PWM signal generators, etc. 
 
 ## Features: 
 - tri-direction (pause, count up, count down) 
