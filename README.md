@@ -1,9 +1,14 @@
 ![](../../workflows/wokwi/badge.svg)
 
-Click to watch a small simulation of the chip or play with it here: https://wokwi.com/projects/341423712597181012
-[![Watch the video](https://i.imgur.com/vlANGMs.png)](https://youtu.be/gjoFz0gdG38)
-![Gate level implementation overview] (https://i.imgur.com/DbY4sNm.png)
-![Chip interface] (https://i.imgur.com/CSaG4wz.png) made with Mixed Radix Circuit Synthesis tool.
+## Play with it here: https://wokwi.com/projects/341423712597181012
+
+[![Chip interface made with Mixed Radix Circuit Synthesis tool](https://i.imgur.com/tyMDeKP.png)]() 
+
+[![Gate level implementation overview](https://i.imgur.com/DbY4sNm.png)]()
+
+[![GDS (die) shot](https://i.imgur.com/uEzMofO.png)]()
+
+
 
 Go to https://tinytapeout.com for instructions!
 
