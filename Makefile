@@ -1,5 +1,5 @@
 WOKWI_PROJECT_ID=341423712597181012
-# binary tri-state loadable counter MOD 4. 
+# binary tri-state loadable counter MOD 16. 
 # It is: Scalable (1 dependency), syncronous, loadable (jump instructions, start-up initialization), tri-state (count up down and no count).   
 # author: Steven Bos 2022
 fetch:
