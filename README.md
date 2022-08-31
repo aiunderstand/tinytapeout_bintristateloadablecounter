@@ -13,6 +13,7 @@ This IP block simulates a binary synchronous (parallel) MOD-4 counter. Applicati
 https://wokwi.com/projects/341423712597181012
 
 ## Video
+https://youtu.be/a_5DLUsAf9g
 
 ## Images
 [![Chip interface made with Mixed Radix Circuit Synthesis tool](https://i.imgur.com/tyMDeKP.png)]() 
