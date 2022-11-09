@@ -6,33 +6,33 @@
 #
 # This will be automatically collected and used to make a datasheet for the chip.
 project: 
-  author:       ""      # Your name
-  title:        ""      # Project title
-  description:  ""      # Short description of what your project does
-  how_it_works: ""      # Longer description of how the project works
-  how_to_test:  ""      # Instructions on how someone could test your project, include things like what buttons do what and how to set the clock if needed
-  external_hw:  ""      # Describe any external hardware needed
-  doc_link:     ""      # URL to longer form documentation, eg the README.md in your repository
+  author:       "Steven Bos"
+  title:        "Scalable synchronous 4-bit tri-directional loadable counter"
+  description:  "This chip offers a scalable n-bit counter design that can be used as a program counter by setting the next address (eg. for a JMP instruction). It can work in 3 directions: counting up, down and pause." 
+  how_it_works: "See the full documentation, youtube movie and image. Each 1-bit counter has a flip-flop with count logic component reacting synchronously to the rising edge clock pulse and a count logic component that computes and setup the behavior for the next rising edge using async propagation when the level is low."
+  how_to_test:  "The count state is randomly initialized. Typically the first action is to reset the state to zero by setting the load switch and have one clock pulse. The second action is setting the direction by enabling count and setting countDown to true or false (and disable load). The counter overflows to all 0 when all 1 is reached and count up is set."     
+  external_hw:  "no external hardware needed"
+  doc_link:     "https://github.com/aiunderstand/tinytapeout_bintristateloadablecounter/blob/main/README.md"
   clock_hz:     0       # Clock frequency in Hz (if required)
-  language:     "wokwi" # other examples include Verilog, Amaranth, VHDL, etc
-  wokwi_id:     0       # the wokwi ID
-  picture:      ""      # relative path to a picture in your repository
-  inputs:               # a description of what the inputs do
+  language:     "mixed radix circuit synthesis (MRCS), wokwi"
+  wokwi_id:     341423712597181012
+  picture:      "syncbintristateloadablecounter.png"
+  inputs:       # a description of what the inputs do from pin 0 to 7
     - clock
-    - reset
+    - count     (0 = disable/countPause, 1 = enable) 
+    - load      (0 = count mode, 1 = load mode, overwriting any count logic)
+    - countDown (0 = countUp, 1 = countUp)
+    - addr3     (bits[4:7] are used for loadable count state)
+    - addr2
+    - addr1
+    - addr0
+  outputs:      # a description of what the outputs do from pin 0 to 7
+    - output3 (bits [0:3])
+    - output2
+    - output1
+    - output0
     - none
     - none
     - none
-    - none
-    - none
-    - none
-  outputs:
-    - segment a         # a description of what the outputs do
-    - segment b
-    - segment c
-    - segment d
-    - segment e
-    - segment f
-    - segment g
     - none
 
