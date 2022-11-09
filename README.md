@@ -1,11 +1,11 @@
 ![](../../workflows/wokwi/badge.svg)
 
-# Binary Tristate Loadable Counter MOD 16
+# Binary Tristate Loadable Counter MOD 16 (so 4-bit)
 This IP block simulates a binary synchronous (parallel) MOD-16 counter. Applications are CPU's, PWM signal generators, etc. 
 
 ## Features: 
 - tri-direction (pause, count up, count down) 
-- loadable (use data[3:1], eg. for jump instruction, initialization at boot up) 
+- loadable (use pin[4:7], eg. for jump instruction, initialization at boot up) 
 - synchronous output(at rising edge) with async (ripple) setup of next count) 
 - easy to control, fast and scalable (each 1 bit counter only depends on previous counter)
 
